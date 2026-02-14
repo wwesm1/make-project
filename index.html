@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make | AI Workflow Automation</title>
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./script.js">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav full-width-container">
+            <a href="#">
+                <img src="./assets/svg/make-logo.svg" alt="make logo" class="make-logo">
+            </a>
+            <svg class="nav-btn" role="none" width="10px" height="10px" viewBox="0 0 56 56" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0 28C0 12.536 12.536 0 28 0V0C43.464 0 56 12.536 56 28V28C56 43.464 43.464 56 28 56V56C12.536 56 0 43.464 0 28V28Z"
+                    fill="currentColor"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M27.9092 21.3636H21.3638V27.9091H27.9092V21.3636ZM27.9092 30.0909H21.3638V36.6364H27.9092V30.0909ZM28.8931 32.1657L34.5616 28.8929L37.8343 34.5615L32.1658 37.8342L28.8931 32.1657ZM36.6365 21.3636H30.091V27.9091H36.6365V21.3636Z"
+                    fill="white"></path>
+            </svg>
+            <ul class="nav__items">
+                <div class="make-dropdown">
+                    <a href="#" class="flex">
+                        <button class="make-dropdown__trigger">
+                            What is Make
+                        </button>
+
+                        <ul class="make-dropdown__menu">
+                            <li class="make-dropdown__arrow" aria-hidden="true"></li>
+
+                            <li class="make-dropdown__item is-active">
+                                <a href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="black" />
+                                    </svg>
+                                    <span class="text">
+                                        <span class="title">Product overview</span>
+                                        <span class="desc">Find out more about the Make platform</span>
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="make-dropdown__item">
+                                <a href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" />
+                                        <path d="M12 8V16M8 12H16" stroke="black" stroke-width="2"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                    <span class="text">
+                                        <span class="title">Apps</span>
+                                        <span class="desc">Browse our library of over 3,000 pre-built apps</span>
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="make-dropdown__item">
+                                <a href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                                        <path
+                                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                        </path>
+                                    </svg>
+                                    <span class="text">
+                                        <span class="title">Enterprise</span>
+                                        <span class="desc">Scale securely with visual-first AI-powered automation</span>
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="make-dropdown__item">
+                                <a href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <span class="text">
+                                        <span class="title">Make Grid</span>
+                                        <span class="desc">Take control of your whole automation landscape</span>
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="make-dropdown__item">
+                                <a href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M11 5L6 9H2V15H6L11 19V5Z"></path>
+                                        <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                                        <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                                    </svg>
+                                    <span class="text">
+                                        <span class="title">What’s new in Make</span>
+                                        <span class="desc">Keep up with our latest developments</span>
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="make-dropdown__item">
+                                <a href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg>
+                                    <span class="text">
+                                        <span class="title">About us</span>
+                                        <span class="desc">Learn more about our mission and values</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <svg class="v-logo" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+                <a href="#">
+                    <div class="make-dropdown">
+                        <a href="#" class="flex">
+                            <button class="make-dropdown__trigger">
+                                Make + AI
+                            </button>
+
+                            <ul class="make-dropdown__menu">
+                                <li class="make-dropdown__arrow" aria-hidden="true"></li>
+
+                                <li class="make-dropdown__item is-active">
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4B2A85"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="5" y="5" width="14" height="14" rx="1" />
+                                            <path d="M9 9h6v6H9z" />
+                                            <path d="M9 1v4M15 1v4M9 19v4M15 19v4M23 9h-4M23 15h-4M5 9H1v4M5 15H1" />
+                                        </svg>
+                                        <span class="text">
+                                            <span class="title">Automation with AI</span>
+                                            <span class="desc">Find out more about the Make platform</span>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li class="make-dropdown__item">
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4B2A85"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M9.5 2a5 5 0 0 1 0 10 5 5 0 0 1 0-10z" />
+                                            <path d="M14.5 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5" />
+                                            <path d="M9.5 22c-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5" />
+                                            <path d="M2 12h3M19 12h3" />
+                                        </svg>
+                                        <span class="text">
+                                            <span class="title">Agentic Automation</span>
+                                            <span class="desc">Browse our library of over 3,000 pre-built apps</span>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li class="make-dropdown__item">
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4B2A85"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" fill="#4B2A85" />
+                                        </svg>
+                                        <span class="text">
+                                            <span class="title">Make AI Agents</span>
+                                            <span class="desc">Scale securely with visual-first AI-powered
+                                                automation</span>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li class="make-dropdown__item">
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4B2A85"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                                            <path d="M3 12h18M12 3v18" />
+                                        </svg>
+                                        <span class="text">
+                                            <span class="title">Libary of agents</span>
+                                            <span class="desc">Take control of your whole automation landscape</span>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li class="make-dropdown__item">
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4B2A85"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M6 9l6 6 6-6" />
+                                            <path d="M12 3v12" />
+                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                        </svg>
+                                        <span class="text">
+                                            <span class="title">Make MCP Server</span>
+                                            <span class="desc">Keep up with our latest developments</span>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li class="make-dropdown__item">
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4B2A85"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="7" cy="7" r="3" />
+                                            <circle cx="17" cy="17" r="3" />
+                                            <path d="M17 4l3 3-3 3-3-3 3-3z" />
+                                            <rect x="4" y="14" width="6" height="6" rx="1" />
+                                        </svg>
+                                        <span class="text">
+                                            <span class="title">Make AI Apps</span>
+                                            <span class="desc">Learn more about our mission and values</span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <svg class="v-logo second" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </a>
+                <a href="#">
+                    <nav class="navbar">
+                        <div class="nav-item">
+                            <a href="#" class="nav-link">Solutions <span class="arrow"></span></a>
+                            <div class="dropdown-pane">
+                                <div class="tip"></div>
+                                <section class="mega-section">
+                                    <h2 class="label">Make across your business</h2>
+                                    <div class="mega-grid">
+                                        <a href="#" class="grid-card">
+                                            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="1.5">
+                                                    <path d="M11 5L6 9H2v6h4l5 4V5z" />
+                                                    <path
+                                                        d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07" />
+                                                </svg></div>
+                                            <div class="info">
+                                                <h3>Marketing</h3>
+                                                <p>Drive faster growth with marketing...</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="grid-card">
+                                            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="1.5">
+                                                    <path d="M23 6l-9.5 9.5-5-5L1 18M17 6h6v6" />
+                                                </svg></div>
+                                            <div class="info">
+                                                <h3>Sales</h3>
+                                                <p>Level up your sales cycle to close more...</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="grid-card">
+                                            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="1.5">
+                                                    <circle cx="12" cy="12" r="3" />
+                                                    <path
+                                                        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                                                </svg></div>
+                                            <div class="info">
+                                                <h3>Operations</h3>
+                                                <p>Get teams and tools working together...</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="grid-card">
+                                            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="1.5">
+                                                    <path
+                                                        d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                                                    <path d="M8 9h8M8 13h6" />
+                                                </svg></div>
+                                            <div class="info">
+                                                <h3>Customer Experience</h3>
+                                                <p>Take better care of customers with...</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="grid-card">
+                                            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="1.5">
+                                                    <rect x="2" y="5" width="20" height="14" rx="2" />
+                                                    <line x1="2" y1="10" x2="22" y2="10" />
+                                                </svg></div>
+                                            <div class="info">
+                                                <h3>Finance</h3>
+                                                <p>Manage time as well as you manage...</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="grid-card">
+                                            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="1.5">
+                                                    <rect x="2" y="3" width="20" height="14" rx="2" />
+                                                    <path d="M8 21h8M12 17v4M7 8h10M7 12h10" />
+                                                </svg></div>
+                                            <div class="info">
+                                                <h3>Information Technology</h3>
+                                                <p>Efficiently scale and control your IT...</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="grid-card">
+                                            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="1.5">
+                                                    <path
+                                                        d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 7a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                                                </svg></div>
+                                            <div class="info">
+                                                <h3>People</h3>
+                                                <p>Get your HR processes running...</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="grid-card">
+                                            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="1.5">
+                                                    <path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 14" />
+                                                </svg></div>
+                                            <div class="info">
+                                                <h3>Workplace Productivity</h3>
+                                                <p>Automate busy work to focus on what...</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </section>
+
+                                <section class="automation-section">
+                                    <h2 class="label">Popular automations</h2>
+                                    <div class="list-grid">
+                                        <a href="#" class="list-item">
+                                            <h3>Social Media Posting</h3>
+                                            <p>More engagement, less effort</p>
+                                        </a>
+                                        <a href="#" class="list-item">
+                                            <h3>Lead Management</h3>
+                                            <p>Automate for more conversions</p>
+                                        </a>
+                                        <a href="#" class="list-item">
+                                            <h3>Invoicing</h3>
+                                            <p>Save time on invoicing and billing</p>
+                                        </a>
+                                        <a href="#" class="list-item">
+                                            <h3>Contracting</h3>
+                                            <p>Automate and make deals faster</p>
+                                        </a>
+                                        <a href="#" class="list-item">
+                                            <h3>Email Marketing</h3>
+                                            <p>Increase your email conversions</p>
+                                        </a>
+                                        <a href="#" class="list-item">
+                                            <h3>Content Creation</h3>
+                                            <p>Generate high quality content with AI</p>
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </nav>
+                </a>
+                <a href="#">
+                    <div class="make-dropdown">
+                        <a href="#" class="flex">
+                            <button class="make-dropdown__trigger">
+                                Resources
+                            </button>
+
+                            <ul class="make-dropdown__menu">
+                                <li class="make-dropdown__arrow" aria-hidden="true"></li>
+
+                                <li class="make-dropdown__item is-active">
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                                        </svg>
+                                        <span class="text">
+                                            <span class="title">Blog</span>
+                                            <span class="desc">Find out more about the Make platform</span>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li class="make-dropdown__item">
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                            <path d="M4 22h16" />
+                                            <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                            <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                            <path d="M18 2H6v7a6 6 0 0 0 12 0V2z" />
+                                        </svg>
+                                        <span class="text">
+                                            <span class="title">Success Stories</span>
+                                            <span class="desc">Browse our library of over 3,000 pre-built apps</span>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li class="make-dropdown__item">
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="4" y="2" width="16" height="20" rx="2" ry="2" />
+                                            <line x1="8" y1="18" x2="16" y2="18" />
+                                            <line x1="8" y1="14" x2="16" y2="14" />
+                                            <line x1="8" y1="10" x2="12" y2="10" />
+                                        </svg>
+                                        <span class="text">
+                                            <span class="title">How-to-guides</span>
+                                            <span class="desc">Scale securely with visual-first AI-powered
+                                                automation</span>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li class="make-dropdown__item">
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path
+                                                d="M9.5 20H5a2 2 0 0 1-2-2v-4.5A2.5 2.5 0 0 1 5.5 11 2.5 2.5 0 0 1 8 13.5 2.5 2.5 0 0 0 10.5 16a2.5 2.5 0 0 0 2.5-2.5A2.5 2.5 0 0 1 15.5 11a2.5 2.5 0 0 1 2.5 2.5V18a2 2 0 0 1-2 2h-4.5" />
+                                            <path
+                                                d="M18 9.5V5a2 2 0 0 0-2-2h-4.5A2.5 2.5 0 0 0 9 5.5 2.5 2.5 0 0 0 11.5 8 2.5 2.5 0 0 1 14 10.5a2.5 2.5 0 0 1-2.5 2.5A2.5 2.5 0 0 1 9 10.5 2.5 2.5 0 0 0 6.5 8 2.5 2.5 0 0 0 4 10.5V15" />
+                                        </svg>
+                                        <span class="text">
+                                            <span class="title">Templates Library</span>
+                                            <span class="desc">Take control of your whole automation landscape</span>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li class="make-dropdown__item">
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                            <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                                        </svg>
+                                        <span class="text">
+                                            <span class="title">Make Academy</span>
+                                            <span class="desc">Keep up with our latest developments</span>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li class="make-dropdown__item">
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                        </svg>
+                                        <span class="text">
+                                            <span class="title">Make Community</span>
+                                            <span class="desc">Learn more about our mission and values</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="make-dropdown__item">
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="12" cy="12" r="10" />
+                                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                            <line x1="12" y1="17" x2="12.01" y2="17" />
+                                        </svg>
+                                        <span class="text">
+                                            <span class="title">Help Center</span>
+                                            <span class="desc">Learn more about our mission and values</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="make-dropdown__item">
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="12" cy="12" r="10" />
+                                            <polygon points="10 8 16 12 10 16 10 8" />
+                                        </svg>
+                                        <span class="text">
+                                            <span class="title">Webinars</span>
+                                            <span class="desc">Learn more about our mission and values</span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <svg class="v-logo third" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </a>
+                <a href="#">
+                </a>
+                <a href="#">
+                    <li>Pricing</li>
+                </a>
+            </ul>
+            <div class="sign__up">
+                <a href="#" class="talk">Talk to sales</a>
+                <button class="log__in">Log in</button>
+                <button class="premium">Get started free</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__about">
+                    <p class="hero__title">AI automation you can visually build and orchestrate in real time</p>
+                    <p class="hero__description">Make brings no-code automation and AI agents into one visual-first
+                        platform
+                        so
+                        you can build with speed and scale with control.</p>
+                    <div class="hero-btns">
+                        <button class="get--free">Get started free</button>
+                        <button class="btn--ghost">Talk to sales</button>
+                    </div>
+                    <div class="checked-list">
+                        <div class="check">
+                            <svg role="none" width="7%" height="7%" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4 8.35294L6.11642 10.4694C6.50695 10.8599 7.14011 10.8599 7.53064 10.4694L12 6"
+                                    stroke="green" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </svg>
+                            <p class="checked">No credit card required</p>
+                        </div>
+                        <div class="check">
+                            <svg role="none" width="7%" height="7%" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4 8.35294L6.11642 10.4694C6.50695 10.8599 7.14011 10.8599 7.53064 10.4694L12 6"
+                                    stroke="green" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </svg>
+                            <p class="checked">No time limit on Free plan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="media">
+                    <video width="790" height="360" autoplay muted loop playsinline class="transparent-vid">
+                        <source src="./assets/media/Homepage-hero-video.mp4" type="video/mp4">
+                </div>
+            </div>
+            <div class="icon-scroller container">
+                <div class="scroller-inner">
+                    <img src="./assets/svg/gojob_2x.webp" alt="Icon">
+                    <img src="./assets/svg/tally_2x.webp" alt="Icon">
+                    <img src="./assets/svg/Bamboo_HR_logo__1_.webp" alt="Icon">
+                    <img src="./assets/svg/BNY_logo_2x.webp" alt="Icon">
+                    <img src="./assets/svg/Bolt_logo_2x.webp" alt="Icon">
+                    <img src="./assets/svg/fonds-finanz_2x.webp" alt="Icon">
+                    <img src="./assets/svg/gojob_2x.webp" alt="Icon">
+                    <img src="./assets/svg/tally_2x.webp" alt="Icon">
+                    <img src="./assets/svg/Bamboo_HR_logo__1_.webp" alt="Icon">
+                    <img src="./assets/svg/BNY_logo_2x.webp" alt="Icon">
+                    <img src="./assets/svg/Bolt_logo_2x.webp" alt="Icon">
+                    <img src="./assets/svg/fonds-finanz_2x.webp" alt="Icon">
+                </div>
+            </div>
+        </section>
+        <section class="creation">
+            <div class="container">
+                <p class="section__title " data-aos="fade-up">Create anything. Orchestrate<br /> everything.</p>
+                <p class="section__about" data-aos="fade-up">From a simple workflow, to managing AI and automation systems<br /> across
+                    your
+                    entire business, you can do it all with Make.</p>
+                <div class="creation__cards" data-aos="fade-up">
+                    <div class="creation__card">
+                        <img src="./assets/svg/IconWrapper__1_.svg">
+                        <p class="card__title">Build and ship fast, be<br /> first</p>
+                        <p class="card__description">Whatever you want to automate, Make gets you moving. Visually
+                            design solutions without code to save time</p>
+                    </div>
+                    <div class="creation__card">
+                        <img src="./assets/svg/IconWrapper__5_.webp">
+                        <p class="card__title">Solve smarter, boost efficiency</p>
+                        <p class="card__description">When complexity grows, Make lets you customize automations and plug
+                            in AI apps for better, faster results.</p>
+                    </div>
+                    <div class="creation__card">
+                        <img src="./assets/svg/IconWrapper__6_.webp">
+                        <p class="card__title">Grow with clarity and<br /> control</p>
+                        <p class="card__description">As you think bigger, you can create autonomous AI agents and manage
+                            everything with a real-time visual map.</p>
+                    </div>
+                </div>
+                <button class="btn--primary" data-aos="fade-up">Explore more</button>
+            </div>
+        </section>
+        <section class="solutions" data-aos="fade-up">
+            <div class="container">
+                <p class="linear">Solutions</p>
+                <p class="section__title">Adapt at speed with visual-first<br /> automation and AI</p>
+                <p class="section__about">Make drives efficiencies, solves problems, and speeds innovation<br /> by
+                    breaking
+                    down silos across your business.</p>
+            </div>
+            <div class="solutions__container">
+                <div class="solutions__tabs">
+                    <button class="solutions__tab is-active" data-solution="it">IT</button>
+                    <button class="solutions__tab" data-solution="operations">Operations</button>
+                    <button class="solutions__tab" data-solution="marketing">Marketing</button>
+                    <button class="solutions__tab" data-solution="sales">Sales</button>
+                    <button class="solutions__tab" data-solution="finance">Finance</button>
+                    <button class="solutions__tab" data-solution="cx">CX</button>
+                    <button class="solutions__tab" data-solution="people">People</button>
+                </div>
+            </div>
+            <div class="it__automation container">
+                <img src="./assets/images/IT.webp">
+                <div class="it__automation__about">
+                    <p class="title__it">IT automation</p>
+                    <p class="description__it">Cut complexity and move faster by automating everything from monitoring
+                        to incident response. Connect tools, integrate AI, reduce manual work, and free your team to
+                        focus on innovation.</p>
+                    <button class="btn--primary">Automate IT</button>
+                </div>
+            </div>
+        </section>
+        <section class="applications" data-aos="fade-up">
+            <div class="container">
+                <p class="linear" data-aos="fade-up">Applications</p>
+                <p class="section__title" data-aos="fade-up">3,000+ pre-built apps. Limitless<br /> integration.</p>
+                <p class="section__about" data-aos="fade-up">Quickly adapt to new market demands by connecting your entire<br /> tech
+                    stack. Use
+                    our massive library of pre-built apps for instant<br /> workflows, and our flexible platform to
+                    integrate
+                    any custom system.</p>
+            </div>
+            <div class="icon-scroller container">
+                <div class="scroller-inner">
+                    <div class="mini-card" style="--brand-color: #8B3DFF;">
+                        <a href="#">
+                            <div class="icon-bg"><img src="./assets/svg/canva.webp"></div>
+                            <p class="name__ai">Canva</p>
+                        </a>
+                    </div>
+                    <div class="mini-card" style="--brand-color: #20808D;">
+                        <a href="#">
+                            <div class="icon-bg"><img src="./assets/svg/perplexity-ai.webp"></div>
+                            <p class="name__ai">Perplexity AI</p>
+                        </a>
+                    </div>
+                    <div class="mini-card" style="--brand-color: #4D6BFE;">
+                        <a href="#">
+                            <div class="icon-bg"><img src="./assets/svg/deepseek-ai.webp"></div>
+                            <p class="name__ai">Deepseek AI</p>
+                        </a>
+                    </div>
+                    <div class="mini-card" style="--brand-color: #10A37F;">
+                        <a href="#">
+                            <div class="icon-bg"><img src="./assets/svg/openai-gpt-3.webp"></div>
+                            <p class="name__ai">OpenAI</p>
+                        </a>
+                    </div>
+                    <div class="mini-card" style="--brand-color: #FF7A59;">
+                        <a href="#">
+                            <div class="icon-bg"><img src="./assets/svg/hubspotcrm.webp"></div>
+                            <p class="name__ai">Hubspotcrm</p>
+                        </a>
+                    </div>
+                    <div class="mini-card" style="--brand-color: #FB275D;">
+                        <a href="#">
+                            <div class="icon-bg"><img src="./assets/svg/monday.webp"></div>
+                            <p class="name__ai">Monday</p>
+                        </a>
+                    </div>
+                    <div class="mini-card" style="--brand-color: #000000;">
+                        <a href="#">
+                            <div class="icon-bg"><img src="./assets/svg/netsuite.webp"></div>
+                            <p class="name__ai">Netsuite</p>
+                        </a>
+                    </div>
+                    <div class="mini-card" style="--brand-color: #019CDC;">
+                        <a href="#">
+                            <div class="icon-bg"><img src="./assets/svg/salesforce.webp"></div>
+                            <p class="name__ai">Salesforce</p>
+                        </a>
+                    </div>
+                    <div class="mini-card" style="--brand-color: #4A154B;">
+                        <a href="#">
+                            <div class="icon-bg"><img src="./assets/svg/slack.webp"></div>
+                            <p class="name__ai">Slack</p>
+                        </a>
+                    </div>
+                    <div class="mini-card" style="--brand-color: #8B3DFF;">
+                        <a href="#">
+                            <div class="icon-bg"><img src="./assets/svg/canva.webp"></div>
+                            <p class="name__ai">Canva</p>
+                        </a>
+                    </div>
+                    <div class="mini-card" style="--brand-color: #20808D;">
+                        <a href="#">
+                            <div class="icon-bg"><img src="./assets/svg/perplexity-ai.webp"></div>
+                            <p class="name__ai">Perplexity AI</p>
+                        </a>
+                    </div>
+                    <div class="mini-card" style="--brand-color: #4D6BFE;">
+                        <a href="#">
+                            <div class="icon-bg"><img src="./assets/svg/deepseek-ai.webp"></div>
+                            <p class="name__ai">Deepseek AI</p>
+                        </a>
+                    </div>
+                    <div class="mini-card" style="--brand-color: #10A37F;">
+                        <a href="#">
+                            <div class="icon-bg"><img src="./assets/svg/openai-gpt-3.webp"></div>
+                            <p class="name__ai">OpenAI</p>
+                        </a>
+                    </div>
+                    <div class="mini-card" style="--brand-color: #FF7A59;">
+                        <a href="#">
+                            <div class="icon-bg"><img src="./assets/svg/hubspotcrm.webp"></div>
+                            <p class="name__ai">Hubspotcrm</p>
+                        </a>
+                    </div>
+                    <div class="mini-card" style="--brand-color: #FB275D;">
+                        <a href="#">
+                            <div class="icon-bg"><img src="./assets/svg/monday.webp"></div>
+                            <p class="name__ai">Monday</p>
+                        </a>
+                    </div>
+                    <div class="mini-card" style="--brand-color: #000000;">
+                        <a href="#">
+                            <div class="icon-bg"><img src="./assets/svg/netsuite.webp"></div>
+                            <p class="name__ai">Netsuite</p>
+                        </a>
+                    </div>
+                    <div class="mini-card" style="--brand-color: #019CDC;">
+                        <a href="#">
+                            <div class="icon-bg"><img src="./assets/svg/salesforce.webp"></div>
+                            <p class="name__ai">Salesforce</p>
+                        </a>
+                    </div>
+                    <div class="mini-card" style="--brand-color: #4A154B;">
+                        <a href="#">
+                            <div class="icon-bg"><img src="./assets/svg/slack.webp"></div>
+                            <p class="name__ai">Slack</p>
+                        </a>
+                    </div>
+                </div>
+                <button class="btn--primary" data-aos="fade-up">Browse apps</button>
+            </div>
+        </section>
+        <section class="success">
+            <div class="container">
+                <p class="linear" data-aos="fade-up">Success stories</p>
+                <p class="section__title" data-aos="fade-up">Automation success stories</p>
+                <p class="section__about" data-aos="fade-up">Go beyond the hype and see how leading companies are achieving<br /> real
+                    results
+                    with
+                    AI and automation. Discover practical insights and<br /> proven strategies to transform your own
+                    business.
+                </p>
+                <div class="success__cards" data-aos="fade-up">
+                    <div class="success__card">
+                        <img src="./assets/images/GoJob__1_.webp">
+                        <div class="card-body">
+                            <div class="meta-info">
+                                <span class="date">📅 Dec 9, 2024</span>
+                                <span class="read-time">⏱️ 5m</span>
+                            </div>
+                            <h2 class="title">GoJob turns to Make and AI to fuel up to a 50% increase in yearly net
+                                revenue
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="success__card">
+                        <img src="./assets/images/Makeitfuture_AI_COMPRPESSED.webp">
+                        <div class="card-body">
+                            <div class="meta-info">
+                                <span class="date">📅 Dec 9, 2024</span>
+                                <span class="read-time">⏱️ 5m</span>
+                            </div>
+                            <h2 class="title">GoJob turns to Make and AI to fuel up to a 50% increase in yearly net
+                                revenue
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="success__card">
+                        <img src="./assets/images/Blain_Carter_FS.webp">
+                        <div class="card-body">
+                            <div class="meta-info">
+                                <span class="date">📅 Dec 9, 2024</span>
+                                <span class="read-time">⏱️ 5m</span>
+                            </div>
+                            <h2 class="title">GoJob turns to Make and AI to fuel up to a 50% increase in yearly net
+                                revenue
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn--primary" data-aos="fade-up">Explore success stories</button>
+            </div>
+        </section>
+        <section class="explore">
+            <div class="container">
+                <div class="automation-of-it reverse" data-aos="fade-up">
+                    <div class="scale">
+                        <p class="linear">AI and automation</p>
+                        <p class="section__title">Scale and orchestrate your AI automations</p>
+                        <p class="section__about">Build faster, more adaptable operations with agentic automation you
+                            can see and control. Scale with Make AI agents working alongside teams. Boost results with
+                            400+ pre-built AI app integrations.</p>
+                        <button class="btn--primary">Explore AI automation</button>
+                    </div>
+                    <img src="./assets/svg/ai.webp">
+                </div>
+                <div class="automation-of-it" data-aos="fade-up">
+                    <img src="./assets/svg/2.webp">
+                    <div class="scale">
+                        <p class="linear">Enterprise</p>
+                        <p class="section__title">Automation and AI impact for enterprise</p>
+                        <p class="section__about">Empower teams to collaborate, innovate, and adapt at scale. Stay in
+                            control with visual orchestration, enhanced security features, and always on support.</p>
+                        <button class="btn--primary">Explore enterprise solutions</button>
+                    </div>
+                </div>
+                <div class="automation-of-it reverse" data-aos="fade-up">
+                    <div class="scale">
+                        <p class="linear">Security</p>
+                        <p class="section__title">Built on strong foundations</p>
+                        <p class="section__about">Make helps you to keep your data secure with built-in GDPR and SOC 2
+                            Type II compliance, encryption, and single sign-on (SSO).</p>
+                        <button class="btn--primary">Explore AI automation</button>
+                    </div>
+                    <img src="./assets/svg/soc_type2.webp">
+                </div>
+                <div class="leaders" data-aos="fade-up">
+                    <p class="section__title top">Leader of customer satisfaction</p>
+                    <p class="section__about">Join thousands of satisfied customers who give us top ratings.</p>
+                    <div class="mini__leaders__cards">
+                        <div class="leaders-card">
+                            <div class="leaders-card__title">
+                                <img src="./assets/svg/send.svg" class="send">
+                                <p class="leaders-card__name">Capterra</p>
+                            </div>
+                            <div class="rating">
+                                <svg data-testid="review-star" xmlns="http://www.w3.org/2000/svg" width="20" height="19"
+                                    viewBox="0 0 20 19" fill="none">
+                                    <path
+                                        d="M9.28711 1.00391C9.51187 0.313562 10.4881 0.313563 10.7129 1.00391L12.2314 5.67773C12.3988 6.19276 12.8794 6.54199 13.4209 6.54199H18.335C19.0615 6.54199 19.3632 7.47139 18.7754 7.89844L14.7998 10.7871C14.3619 11.1054 14.1785 11.6697 14.3457 12.1846L15.8643 16.8584C16.0887 17.5492 15.2987 18.1237 14.7109 17.6973L10.7344 14.8086C10.2963 14.4904 9.70368 14.4904 9.26562 14.8086L5.28906 17.6973C4.70133 18.1237 3.91129 17.5492 4.13574 16.8584L5.6543 12.1846C5.82153 11.6697 5.63812 11.1054 5.2002 10.7871L1.22461 7.89844C0.636824 7.47139 0.938497 6.54199 1.66504 6.54199H6.5791C7.12063 6.54199 7.60121 6.19276 7.76855 5.67773L9.28711 1.00391Z"
+                                        fill="url(#paint0_linear_1596_3902)" stroke="url(#paint1_linear_1596_3902)"
+                                        stroke-width="0.5"></path>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_1596_3902" x1="10" y1="-2" x2="10" y2="22"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FFD231"></stop>
+                                            <stop offset="1" stop-color="#FFAF36"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_1596_3902" x1="10" y1="-2" x2="10" y2="22"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-opacity="0.05"></stop>
+                                            <stop offset="1" stop-opacity="0.1"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <p>4.8 <span class="review">(404 reviews)</span></p>
+                            </div>
+                        </div>
+                        <div class="leaders-card">
+                            <div class="leaders-card__title">
+                                <img src="./assets/svg/send2.svg" class="send">
+                                <p class="leaders-card__name">G2</p>
+                            </div>
+                            <div class="rating">
+                                <svg data-testid="review-star" xmlns="http://www.w3.org/2000/svg" width="20" height="19"
+                                    viewBox="0 0 20 19" fill="none">
+                                    <path
+                                        d="M9.28711 1.00391C9.51187 0.313562 10.4881 0.313563 10.7129 1.00391L12.2314 5.67773C12.3988 6.19276 12.8794 6.54199 13.4209 6.54199H18.335C19.0615 6.54199 19.3632 7.47139 18.7754 7.89844L14.7998 10.7871C14.3619 11.1054 14.1785 11.6697 14.3457 12.1846L15.8643 16.8584C16.0887 17.5492 15.2987 18.1237 14.7109 17.6973L10.7344 14.8086C10.2963 14.4904 9.70368 14.4904 9.26562 14.8086L5.28906 17.6973C4.70133 18.1237 3.91129 17.5492 4.13574 16.8584L5.6543 12.1846C5.82153 11.6697 5.63812 11.1054 5.2002 10.7871L1.22461 7.89844C0.636824 7.47139 0.938497 6.54199 1.66504 6.54199H6.5791C7.12063 6.54199 7.60121 6.19276 7.76855 5.67773L9.28711 1.00391Z"
+                                        fill="url(#paint0_linear_1596_3902)" stroke="url(#paint1_linear_1596_3902)"
+                                        stroke-width="0.5"></path>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_1596_3902" x1="10" y1="-2" x2="10" y2="22"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FFD231"></stop>
+                                            <stop offset="1" stop-color="#FFAF36"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_1596_3902" x1="10" y1="-2" x2="10" y2="22"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-opacity="0.05"></stop>
+                                            <stop offset="1" stop-opacity="0.1"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <p>4.7 <span class="review">(238 reviews)</span></p>
+                            </div>
+                        </div>
+                        <div class="leaders-card">
+                            <div class="leaders-card__title">
+                                <img src="./assets/svg/send3.svg" class="send">
+                                <p class="leaders-card__name">Getapp</p>
+                            </div>
+                            <div class="rating">
+                                <svg data-testid="review-star" xmlns="http://www.w3.org/2000/svg" width="20" height="19"
+                                    viewBox="0 0 20 19" fill="none">
+                                    <path
+                                        d="M9.28711 1.00391C9.51187 0.313562 10.4881 0.313563 10.7129 1.00391L12.2314 5.67773C12.3988 6.19276 12.8794 6.54199 13.4209 6.54199H18.335C19.0615 6.54199 19.3632 7.47139 18.7754 7.89844L14.7998 10.7871C14.3619 11.1054 14.1785 11.6697 14.3457 12.1846L15.8643 16.8584C16.0887 17.5492 15.2987 18.1237 14.7109 17.6973L10.7344 14.8086C10.2963 14.4904 9.70368 14.4904 9.26562 14.8086L5.28906 17.6973C4.70133 18.1237 3.91129 17.5492 4.13574 16.8584L5.6543 12.1846C5.82153 11.6697 5.63812 11.1054 5.2002 10.7871L1.22461 7.89844C0.636824 7.47139 0.938497 6.54199 1.66504 6.54199H6.5791C7.12063 6.54199 7.60121 6.19276 7.76855 5.67773L9.28711 1.00391Z"
+                                        fill="url(#paint0_linear_1596_3902)" stroke="url(#paint1_linear_1596_3902)"
+                                        stroke-width="0.5"></path>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_1596_3902" x1="10" y1="-2" x2="10" y2="22"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FFD231"></stop>
+                                            <stop offset="1" stop-color="#FFAF36"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_1596_3902" x1="10" y1="-2" x2="10" y2="22"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-opacity="0.05"></stop>
+                                            <stop offset="1" stop-opacity="0.1"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <p>4.8 <span class="review">(404 reviews)</span></p>
+                            </div>
+                        </div>
+                        <div class="leaders-card">
+                            <div class="leaders-card__title">
+                                <img src="./assets/svg/send4.svg" class="send">
+                                <p class="leaders-card__name">Gartner</p>
+                            </div>
+                            <div class="rating">
+                                <svg data-testid="review-star" xmlns="http://www.w3.org/2000/svg" width="20" height="19"
+                                    viewBox="0 0 20 19" fill="none">
+                                    <path
+                                        d="M9.28711 1.00391C9.51187 0.313562 10.4881 0.313563 10.7129 1.00391L12.2314 5.67773C12.3988 6.19276 12.8794 6.54199 13.4209 6.54199H18.335C19.0615 6.54199 19.3632 7.47139 18.7754 7.89844L14.7998 10.7871C14.3619 11.1054 14.1785 11.6697 14.3457 12.1846L15.8643 16.8584C16.0887 17.5492 15.2987 18.1237 14.7109 17.6973L10.7344 14.8086C10.2963 14.4904 9.70368 14.4904 9.26562 14.8086L5.28906 17.6973C4.70133 18.1237 3.91129 17.5492 4.13574 16.8584L5.6543 12.1846C5.82153 11.6697 5.63812 11.1054 5.2002 10.7871L1.22461 7.89844C0.636824 7.47139 0.938497 6.54199 1.66504 6.54199H6.5791C7.12063 6.54199 7.60121 6.19276 7.76855 5.67773L9.28711 1.00391Z"
+                                        fill="url(#paint0_linear_1596_3902)" stroke="url(#paint1_linear_1596_3902)"
+                                        stroke-width="0.5"></path>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_1596_3902" x1="10" y1="-2" x2="10" y2="22"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FFD231"></stop>
+                                            <stop offset="1" stop-color="#FFAF36"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_1596_3902" x1="10" y1="-2" x2="10" y2="22"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-opacity="0.05"></stop>
+                                            <stop offset="1" stop-opacity="0.1"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <p>4.6 <span class="review">(20 reviews)</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="click" data-aos="fade-up">
+                <p class="footer__title">Realize your business’s full potential</p>
+                <div class="btns">
+                    <div class="hero-btns">
+                        <button class="btn--ghost">Talk to sales</button>
+                        <button class="btn--primary">Get started free</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__lists">
+                <div class="subscribes">
+                    <label for="subscribe">Subscribe to news updates*</label><br />
+                    <input id="subscribe" type="email" placeholder="Your email address">
+                    <p class="form">* By submitting this form, you confirm that you agree<br /> to the storing and
+                        processing
+                        of your personal data<br /> as described in our <a href="#" class="notice">Privacy Notice</a>
+                    </p>
+                    <button class="strelka">
+                        <a href="#" class="subscribing">
+                            <p>
+                                SUBSCRIBE</p>
+                            <svg width="24" height="24" viewBox="0 0 30 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </button>
+                </div>
+                <div class="footer__items">
+                    <ul class="footer__list">
+                        <li class="title-list">Make</li>
+                        <a href="#">
+                            <li>Product</li>
+                        </a>
+                        <a href="#">
+                            <li>Make + AI</li>
+                        </a>
+                        <a href="#">
+                            <li>Make AI Agents</li>
+                        </a>
+                        <a href="#">
+                            <li>Apps</li>
+                        </a>
+                        <a href="#">
+                            <li>Make Grid</li>
+                        </a>
+                        <a href="#">
+                            <li>Pricing</li>
+                        </a>
+                        <a href="#">
+                            <li> Get demo</li>
+                        </a>
+                        <a href="#">
+                            <li>Enterprise</li>
+                        </a>
+                        <a href="#">
+                            <li>Status</li>
+                        </a>
+                        <a href="#">
+                            <li>Waves</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer__items">
+                    <ul class="footer__list">
+                        <li class="title-list">Solutions</li>
+                        <a href="#">
+                            <li>How-to guides</li>
+                        </a>
+                        <a href="#">
+                            <li>Success stories</li>
+                        </a>
+                        <a href="#">
+                            <li>Templates</li>
+                        </a>
+                        <a href="#">
+                            <li>Partner directory</li>
+                        </a>
+                        <a href="#">
+                            <li>Idea exchange</li>
+                        </a>
+                        <a href="#">
+                            <li>Automation Tools</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer__items">
+                    <ul class="footer__list">
+                        <li class="title-list">Resources</li>
+                        <a href="#">
+                            <li>Make Academy</li>
+                        </a>
+                        <a href="#">
+                            <li>Make Community</li>
+                        </a>
+                        <a href="#">
+                            <li>Help Center</li>
+                        </a>
+                        <a href="#">
+                            <li>Developers Hub</li>
+                        </a>
+                        <a href="#">
+                            <li>Blog</li>
+                        </a>
+                        <a href="#">
+                            <li>Webinars</li>
+                        </a>
+                        <a href="#">
+                            <li>Affiliate</li>
+                        </a>
+                        <a href="#">
+                            <li>Partners</li>
+                        </a>
+                        <a href="#">
+                            <li>Security</li>
+                        </a>
+                        <a href="#">
+                            <li>On-prem agents</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer__items">
+                    <ul class="footer__list">
+                        <li class="title-list">Company</li>
+                        <a href="#">
+                            <li>About</li>
+                        </a>
+                        <a href="#">
+                            <li>Careers</li>
+                        </a>
+                        <a href="#">
+                            <li>Contact us</li>
+                        </a>
+                        <a href="#">
+                            <li>Press</li>
+                        </a>
+                        <a href="#">
+                            <li>Terms & conditions</li>
+                        </a>
+                        <a href="#">
+                            <li>Privacy and GDPR</li>
+                        </a>
+                        <a href="#">
+                            <li>Disclaimer</li>
+                        </a>
+                        <a href="#">
+                            <li>Bug Bounty</li>
+                        </a>
+                        <a href="#">
+                            <li>Ethics & Compliance</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom">
+                <p class="reserved">© 2026 Celonis, Inc. All rights reserved.</p>
+                <div class="icons">
+                    <svg stroke="white" fill="white" stroke-width="0" viewBox="0 0 512 512" height="30px" width="30px"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z">
+                        </path>
+                    </svg>
+                    <svg stroke="white" fill="white" stroke-width="0" viewBox="0 0 512 512" height="30px" width="30px"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z">
+                        </path>
+                        <path
+                            d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z">
+                        </path>
+                    </svg>
+                    <svg stroke="white" fill="white" stroke-width="0" viewBox="0 0 16 16" height="30px" width="30px"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z">
+                        </path>
+                    </svg>
+                    <svg stroke="white" fill="white" stroke-width="0" viewBox="0 0 512 512" height="30px" width="30px"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z">
+                        </path>
+                    </svg>
+                    <svg stroke="white" fill="white" stroke-width="0" viewBox="0 0 512 512" height="30px" width="30px"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M508.64 148.79c0-45-33.1-81.2-74-81.2C379.24 65 322.74 64 265 64h-18c-57.6 0-114.2 1-169.6 3.6C36.6 67.6 3.5 104 3.5 149 1 184.59-.06 220.19 0 255.79q-.15 53.4 3.4 106.9c0 45 33.1 81.5 73.9 81.5 58.2 2.7 117.9 3.9 178.6 3.8q91.2.3 178.6-3.8c40.9 0 74-36.5 74-81.5 2.4-35.7 3.5-71.3 3.4-107q.34-53.4-3.26-106.9zM207 353.89v-196.5l145 98.2z">
+                        </path>
+                    </svg>
+                </div>
+                <img src="./assets/svg/vertical-star-rating.webp" class="star">
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: false,
+        });
+    </script> something with that
+</body>
+
+</html>

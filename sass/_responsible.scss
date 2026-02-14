@@ -1,0 +1,136 @@
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px 5px;
+    }
+
+    .nav__items {
+        display: none !important
+    }
+
+    .nav-btn {
+        display: block!important;
+    }
+
+    .hero {
+
+        .container {
+            display: flex !important;
+            flex-direction: column-reverse !important;
+
+            .hero__about {
+                width: 400px;
+
+                .hero__title {
+                    font-size: $fs-35;
+                    text-align: center;
+                }
+
+                .hero__description {
+                    text-align: center;
+                    width: 380px;
+                    margin: 0 auto
+                }
+
+                .hero-btns {
+                    @include flex-column;
+                    width: 100%;
+
+                    button {
+                        width: 360px;
+                    }
+                }
+
+                .checked-list {
+                    @include flex-column;
+                }
+            }
+        }
+    }
+
+    .creation {
+        .creation__cards {
+            @include flex-column;
+            padding: 0 20px;
+        }
+    }
+
+    .btn--primary {
+        width: 380px;
+    }
+
+    .solutions__tab {
+        display: none;
+    }
+
+    .is-active {
+        display: block;
+        width: 300px;
+        background: linear-gradient(120deg, rgba(142, 45, 226, 0.2) 30%, rgba(249, 0, 195, 0.2) 100%) padding-box;
+            box-shadow: 0 4px 12px rgba(255, 43, 214, 0.1);
+    }
+
+    .it__automation {
+        @include flex-column;
+
+        .btn--primary {
+            width: 100%;
+        } 
+    }
+
+    .applications {
+        @include flex-column;
+    }
+
+    .success__cards {
+        @include flex-column;
+        gap: 30px;
+    }
+
+    .automation-of-it {
+        @include flex-column;
+    }
+
+    .reverse {
+        @include flex-column;
+        flex-direction: column-reverse;
+    }
+
+    .mini__leaders__cards {
+        @include flex-column;
+    }
+
+    .click {
+        @include flex-column;
+
+        .btn--ghost {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        .footer__title {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .subscribes {
+        @include flex-column;
+    }
+
+    .footer__lists {
+        @include flex-column;
+        text-align: center;
+    }
+}

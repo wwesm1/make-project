@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html::-webkit-scrollbar {
+    width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+    background: $bg-color;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: $purple-grad;
+    border-radius: 8px;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Inter", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.btn--primary {
+    background: linear-gradient(120deg, #8e2de2 30%, #f900c3 100%);
+    color: $pure-white;
+    font-weight: $fw-500;
+    transition: all 0.50s ease;
+    padding: 15px 28px;
+    border-radius: 12px;
+
+    &:hover {
+        box-shadow: 0 4px 20px rgba(142, 45, 226, 0.4);
+        filter: brightness(1.2);
+    }
+}
+
+.btn--ghost {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #fff !important;
+    transition: all 0.30s ease;
+    padding: 19px 32px;
+    border-radius: 12px;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: #fff;
+    }
+}
